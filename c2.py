@@ -1,7 +1,6 @@
-#telekenesis.py
+#control your C2 server through a telegram text
+#replace 'BOT_TOKEN' with your bot token
 
-#this module uses output from sqlmap to sipder a website and find an injection point
-#once it find one, it will notify you through telegrams api so you can run it on a private server
 import subprocess, os, sys
 from colorama import Fore, Back, Style
 import logging
