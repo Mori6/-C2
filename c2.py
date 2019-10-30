@@ -43,6 +43,7 @@ def main():
     resultstr = shlex.split(resultstr)
     #resultstr.split()
     chat_id = bot.get_updates()[-1].message.chat_id
+    resultstr.insert(0, 'proxychains')
     
     result = subprocess.run(resultstr, stdout=subprocess.PIPE)
     output = str(result.stdout)
