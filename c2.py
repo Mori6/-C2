@@ -26,6 +26,8 @@ def WaitGetHost():
             var = bot.get_updates(offset=-1)
             for x in var:
                 print (x.message.text)
+                chat_id = bot.get_updates()[-1].message.chat_id
+                bot.send_message(chat_id=chat_id, text="running...")
                 return x.message.text
 
 
